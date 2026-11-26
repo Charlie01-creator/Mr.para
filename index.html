@@ -79,8 +79,20 @@ header{backdrop-filter:none;background:var(--w)}
 h1{font-size:clamp(3.4rem,11.5vw,10.5rem);line-height:.9;letter-spacing:-.035em;margin-left:-.04em}
 h1 em{display:block;font-style:italic;color:var(--b);padding-left:.6em}
 .hero p.lead{font-family:var(--serif);font-size:clamp(1.35rem,2.4vw,1.9rem);line-height:1.35;color:var(--c2);margin:2rem 0 2.2rem;max-width:30ch}
-.portrait{position:relative;aspect-ratio:4/5;background:var(--o);border:1px solid var(--line);overflow:hidden;display:grid;place-items:center;text-align:center;padding:1.5rem}
-.portrait svg{position:absolute;inset:0;width:100%;height:100%}
+.portrait {
+  padding: 0;
+}
+
+.portrait img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+ .portrait{position:relative;aspect-ratio:4/5;background:var(--o);border:1px solid var(--line);overflow:hidden;display:grid;place-items:center;text-align:center;padding:1.5rem}
+ 
+ .portrait svg{position:absolute;inset:0;width:100%;height:100%}
 .portrait span{position:relative;font-size:.9rem;background:var(--w);padding:.5rem .8rem;border:1px dashed var(--b);color:var(--b)}
 .strip{margin-top:clamp(3rem,6vw,5rem);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(3,1fr)}
 .strip div{padding:1.4rem 1.2rem 1.6rem 0;border-right:1px solid var(--line)}.strip div+div{padding-left:1.2rem}.strip div:last-child{border:0}
