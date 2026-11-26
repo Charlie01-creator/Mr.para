@@ -1,0 +1,8 @@
+# Demonstration site: block indexing until real, verified content is published.
+User-agent: *
+Disallow: /
+
+# At launch, replace the two lines above with:
+#   User-agent: *
+#   Allow: /
+#   Sitemap: https://YOUR-REAL-DOMAIN/sitemap.xml
